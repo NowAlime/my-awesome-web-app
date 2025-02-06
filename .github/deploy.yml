@@ -1,0 +1,31 @@
+name: Deploy Vite App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Запуск при пуші в main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout репозиторій
+        uses: actions/checkout@v4
+
+      - name: Встановлення Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Встановлення залежностей
+        run: npm install
+
+      - name: Збірка проєкту
+        run: npm run build
+
+      - name: Деплой на GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Деплой у гілку gh-pages
+          folder: dist       # Папка для деплою (vite build створює dist)
