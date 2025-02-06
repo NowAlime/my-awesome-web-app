@@ -1,0 +1,83 @@
+.projects {
+    background: #ffffff; /* Білий фон секції */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-item {
+    background: linear-gradient(135deg, #1f0de8, white); /* Градієнт картки */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+  }
+  
+  .project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-item h3 {
+    font-size: 1.5rem;
+    color: #fff; /* Білий текст для контрасту з градієнтом */
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-item p {
+    font-size: 1rem;
+    color: #f7f7f7; /* Світло-сірий текст */
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tech-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .tech-list li {
+    background: rgba(255, 255, 255, 0.8); /* Напівпрозорий білий фон */
+    color: #555;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .project-item a {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Градієнт кнопки */
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .project-item a:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }

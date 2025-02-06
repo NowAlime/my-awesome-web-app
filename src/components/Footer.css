@@ -1,0 +1,63 @@
+.footer {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Градієнтний фон */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .contact-info a {
+    color: #ffebcc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .contact-info a:hover {
+    color: #fff;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: background 0.3s;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .social-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .footer-credits {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
